@@ -1,6 +1,6 @@
 {
   "name": "sass-ems",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "James Newell <james@digitaledgeit.com.au>",
   "keywords": ["em", "pxtoem", "sass-em", "pixel", "px", "font", "size", "sass", "libsass", "scss", "style", "sass-composer"],
   "description": "A SASS function for converting px to em.",

@@ -10,12 +10,17 @@ A SASS function for converting `px` to `em`.
 
     $ sass-composer example/example.scss -o compiled.css
 
+SCSS: `example/settings.scss`
+
+    //this is the default setting if not specified by the user
+    $base-font-size: 16px;
+    
+
 SCSS: `example/example.scss`
     
+    @import "./settings";
     @import "sass-ems";
-    
-    $base-font-size: 16px; //defaults to 16px if not set
-    
+
     h1 {
       padding: em(15px);
       font-size: em(24px);

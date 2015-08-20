@@ -1,0 +1,28 @@
+
+/// The base px size
+/// @type {px}
+$base-font-size: 16px !default;
+
+/// Convert a px value to em
+/// @param {px} $target - The desired px size
+/// @param {px} $context [$base-font-size] - The base px size
+/// @return {em} The px value in em
+@function em($target, $context: $base-font-size) {
+
+  //make sure the divider is not 0
+  @if $context == 0 {
+    @error 'em(): Context cannot be `0`.';
+  }
+
+  //return a unit less 0 (best practice)
+  @if $target == 0 {
+    @return 0
+  }
+
+  //make sure units are in px
+  @if (unit($target) != 'px' or unit($target) != 'px') {
+    @error 'em(): Units must be `px`.';
+  }
+
+  @return ($target / $context) * 1em;
+}

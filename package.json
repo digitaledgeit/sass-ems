@@ -1,0 +1,15 @@
+{
+  "name": "sass-ems",
+  "version": "1.0.0",
+  "author": "James Newell <james@digitaledgeit.com.au>",
+  "keywords": ["em", "pxtoem", "pixel", "font", "size", "sass", "libsass", "scss", "style", "sass-composer"],
+  "description": "Function for converting pixels to ems.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/digitaledgeit/sass-ems.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digitaledgeit/sass-ems/issues"
+  },
+  "license": "MIT"
+}

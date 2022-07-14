@@ -24,5 +24,5 @@ $base-font-size: 16px !default;
     @error 'sass-ems: Units must be `px`.';
   }
 
-  @return ($val / $ctx) * 1em;
+  @return calc($val / $ctx) * 1em;
 }
